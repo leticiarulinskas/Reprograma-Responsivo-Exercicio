@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(../assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    background-color:white;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;    
+    list-style-type: none;
+    height: 10vh;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+li a:hover{
+    color: gray;
+}
+
+.banner{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 200px;
+    font-size: 1.5rem;
+}
+
+.banner_title{
+    margin-top: 350px;
+    color: black;
+}
+
+.banner h4{
+    color: #808080;
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.projetos_site{
+    display: flex;
+    justify-content: center;
+}
+
+.projetos_title, .sobre_title{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+.projetos{
+    height: 98vh;    
+}
+
+.site_img{
+    width: 98%;
+    border: 1px solid black;
+}
+
+.site_title{    
+    color: gray;
+    font-family: 'Roboto Thin', sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn{
+    padding: 50px;
+    text-align: center;
+}
+
+.btn_link{
+    color:black;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn_link:hover{
+    color:white;
+    background-color: black;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.sobreMim{
+    height: 64vh;
+}
+
+.sobreMim_img{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+.sobreMim_description{
+    color: gray;
+    font-family: 'Roboto Thin', sans-serif;
+    text-align: justify;  
+    margin-top: -150px;
+    margin-left: 420px;
+    width: 55%;
+}
+
+.sobreMim_description > b{
+    color: black;
+}
+
+.contato{
+    height: 22vh;
+}
+
+.contato_icons{
+    display: flex;
+    justify-content: center;
+}
+
+.contato_img-icon{
+    width: 50%;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+footer > h5{
+    font-family: 'Roboto Thin', sans-serif;
+    color: white;
+}
+
+footer > h5 > b {
+    color: white;
+    margin-right: 45px;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+    header{
+        height: 100vh;
+    }
+
+    .banner_title{
+        margin-top: 250px;
+    }
+
+    .banner > h4{
+        width: 80%;
+        margin-top: 25px;
+        font-size: 1.2rem;
+    }
+
+    .projetos_site{
+        display: inline-block;
+    }
+
+    .projetos{
+        height: 145vh;
+    }
+
+    .btn{
+        padding: 45px;
+    }
+
+    .sobreMim{
+        display: inline-block;
+        height: 105vh;
+    }
+
+    .sobreMim_img{
+        height: 150px;
+        width: 200px;
+        border-radius: 10%;
+        margin-left: 28px;
+    }
+    
+    .sobreMim_description{
+        margin: 50px 0;
+        width: 100%;
+    }
+
+    .contato{
+        height: 18vh;
+    }
+
+    .contato_img-icon{
+        margin-left: 22px;
+    }
+    
+    h5{
+        width: 20%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px){
+    header{
+        height: 100vh;
+    }
+
+    .banner_title{
+        margin-top: 250px;
+    }
+
+    .banner > h4{
+        margin-top: 25px;
+        font-size: 1.2rem;
+    }
+
+    .projetos_site{
+        display: inline-block;
+    }
+
+    .projetos{
+        height: 145vh;
+    }
+
+    .btn{
+        padding: 45px;
+    }
+
+    .sobreMim{
+        display: inline-block;
+        height: 96vh;
+    }
+
+    .sobreMim_img{
+        height: 150px;
+        width: 200px;
+        border-radius: 10%;
+        margin-left: 50px;
+    }
+    
+    .sobreMim_description{
+        margin: 50px 0;
+        width: 100%;
+    }
+
+    .contato{
+        height: 20vh;
+    }
+
+    .contato_img-icon{
+        margin-left: 25px;
+    }
+    
+    h5{
+        width: 20%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+    header{
+        height: 100vh;
+    }
+
+    .banner_title{
+        margin-top: 250px;
+    }
+
+    .banner > h4{
+        margin-top: 25px;
+        font-size: 1.2rem;
+    }
+
+    .projetos{
+        height: 145vh;
+    }
+
+    .sobreMim{
+        display: inline-block;
+        height: 96vh;
+    }
+
+    .sobreMim_img{
+        margin-left: 70px;
+    }
+    
+    .contato{
+        height: 21vh;
+    }
+
+    .contato_img-icon{
+        margin-left: 29px;
+    }
+    
+    h5{
+        width: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    header{
+        height: 100vh;
+    }
+
+    .banner_title{
+        margin-top: 310px;
+    }
+
+    .banner > h4{
+        margin-top: 25px;
+    }
+
+    .projetos_site{
+        display: inline-block;
+    }
+
+    .projetos{
+        height: 183vh;
+    }
+
+    .site_title{
+        text-align: center;
+    }
+
+    .btn{
+        padding: 45px;
+    }
+
+    .sobreMim{
+        display: flex;
+        height: 56vh;
+    }
+
+    .sobreMim_img{
+        height: 160px;
+        width: 200px;
+        border-radius: 10%;
+        margin-left: 0px;
+    }
+    
+    .sobreMim_description{
+        text-align: left;
+        margin-left: 215px;
+        width: 65%;
+    }
+
+    .contato{
+        height: 22vh;
+    }
+
+    .contato_img-icon{
+        width: 34%;
+        margin-left: 65px;
+    }
+    
+    h5{
+        width: 19%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    header{
+        height: 100vh;
+    }
+
+    .banner_title{
+        margin-top: 320px;
+    }
+
+    .banner > h4{
+        margin-top: 25px;
+    }
+
+    .projetos_site{
+        display: flex;
+    }
+    
+    .projetos_title, .sobre_title{
+        padding: 45px;
+    }
+    
+    .projetos{
+        height: 87vh;    
+    }
+
+    .site_title{
+        text-align: left;
+    }
+    
+    .site_img{
+        width: 95%;
+    }
+
+    .sobreMim{
+        display: flex;
+        height: 56vh;
+    }
+
+    .sobreMim_img{
+        height: 160px;
+        width: 200px;
+        border-radius: 10%;
+        margin-left: 55px;
+    }
+    
+    .sobreMim_description{
+        text-align: left;
+        margin-left: 320px;
+        width: 55%;
+    }
+
+    .contato{
+        height: 22vh;
+    }
+
+    .contato_img-icon{
+        width: 34%;
+        margin-left: 65px;
+    }
+    
+    h5{
+        width: 25%;
+    }
+}
